@@ -13,7 +13,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div id="hero-section" className="border-2 h-[70vh]">
+    <div id="hero-section" className="h-[70vh]">
       <div className="flex h-full mt-28">
         <div className="flex flex-col mx-8">
           <div className={`${styles.nameHeader}  mb-4 text-white`}>
@@ -25,12 +25,14 @@ const HeroSection = () => {
             {formatMessage("name")}
           </div>
           <div
-            className={`${styles.positionWrapper} text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-300  mt-4`}
+            className={`${styles.positionWrapper} text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-300 mt-4`}
           >
             {formatMessage("position")}
           </div>
 
-          <div className="mt-8 w-[40%] text-gray-400">
+          <div
+            className={`${styles.introWrapper} mt-8 w-[45%] text-justify text-gray-400`}
+          >
             {formatMessage("introduction")}
           </div>
         </div>
