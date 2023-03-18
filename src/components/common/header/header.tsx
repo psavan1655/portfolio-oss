@@ -69,9 +69,6 @@ export default function Header() {
             </li>
           </ul>
         </nav>
-        <style>{`
-     
-    `}</style>
       </div>
       <div className={styles.headerBorder}></div>
     </div>
